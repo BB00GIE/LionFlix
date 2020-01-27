@@ -1,0 +1,6 @@
+framework module Pods_DeClawed_DeClawedUITests {
+  umbrella header "Pods-DeClawed-DeClawedUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
