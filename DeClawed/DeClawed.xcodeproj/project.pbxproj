@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1A8DBE568C2E01171C80BAE0 /* Pods_DeClawed_DeClawedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DBF42B4E774C32A2F26335 /* Pods_DeClawed_DeClawedUITests.framework */; };
 		4AEEA7C79FC7A5FD7830004D /* Pods_DeClawedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5657B75DDB3B992F32FC88E /* Pods_DeClawedTests.framework */; };
 		902FBE2223DE908C00577582 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FBE2123DE908C00577582 /* MovieCell.swift */; };
+		9074763023E4D55C00D36841 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9074762F23E4D55C00D36841 /* MovieDetailsViewController.swift */; };
+		907EF81423E5D71700CB1047 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EF81323E5D71700CB1047 /* MovieGridViewController.swift */; };
+		907EF81623E5DC1B00CB1047 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EF81523E5DC1B00CB1047 /* MovieGridCell.swift */; };
 		90AA137123D9125D00B92CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA137023D9125D00B92CC6 /* AppDelegate.swift */; };
 		90AA137323D9125D00B92CC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA137223D9125D00B92CC6 /* SceneDelegate.swift */; };
 		90AA137823D9125D00B92CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AA137623D9125D00B92CC6 /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		774986347C3C86108D456634 /* Pods-DeClawed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeClawed.debug.xcconfig"; path = "Target Support Files/Pods-DeClawed/Pods-DeClawed.debug.xcconfig"; sourceTree = "<group>"; };
 		7CAAA3323A93DA154151E3BE /* Pods_DeClawed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeClawed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902FBE2123DE908C00577582 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		9074762F23E4D55C00D36841 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		907EF81323E5D71700CB1047 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		907EF81523E5DC1B00CB1047 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		90AA136D23D9125D00B92CC6 /* DeClawed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeClawed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AA137023D9125D00B92CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90AA137223D9125D00B92CC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +119,6 @@
 				4D79B3EFD708BB34578031B8 /* Pods-DeClawedTests.debug.xcconfig */,
 				DE154086C3A6FA5C717A9A12 /* Pods-DeClawedTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +147,7 @@
 		90AA136F23D9125D00B92CC6 /* DeClawed */ = {
 			isa = PBXGroup;
 			children = (
+				9074762F23E4D55C00D36841 /* MovieDetailsViewController.swift */,
 				90AA137023D9125D00B92CC6 /* AppDelegate.swift */,
 				90AA137223D9125D00B92CC6 /* SceneDelegate.swift */,
 				90AA137623D9125D00B92CC6 /* Main.storyboard */,
@@ -150,6 +156,8 @@
 				90AA137E23D9125E00B92CC6 /* Info.plist */,
 				90AA13A023D9132500B92CC6 /* MoviesViewController.swift */,
 				902FBE2123DE908C00577582 /* MovieCell.swift */,
+				907EF81323E5D71700CB1047 /* MovieGridViewController.swift */,
+				907EF81523E5DC1B00CB1047 /* MovieGridCell.swift */,
 			);
 			path = DeClawed;
 			sourceTree = "<group>";
@@ -411,10 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9074763023E4D55C00D36841 /* MovieDetailsViewController.swift in Sources */,
 				90AA137123D9125D00B92CC6 /* AppDelegate.swift in Sources */,
 				90AA137323D9125D00B92CC6 /* SceneDelegate.swift in Sources */,
 				902FBE2223DE908C00577582 /* MovieCell.swift in Sources */,
 				90AA13A123D9132500B92CC6 /* MoviesViewController.swift in Sources */,
+				907EF81423E5D71700CB1047 /* MovieGridViewController.swift in Sources */,
+				907EF81623E5DC1B00CB1047 /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +600,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34ZF7PZU7N;
 				INFOPLIST_FILE = DeClawed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,7 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.DeClawed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -607,7 +620,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34ZF7PZU7N;
 				INFOPLIST_FILE = DeClawed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,7 +630,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.DeClawed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
