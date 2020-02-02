@@ -172,6 +172,7 @@
                                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <connections>
                                             <outlet property="PosterView" destination="ilo-Th-B96" id="nNA-gF-1Tl"/>
+                                            <segue destination="A1S-Gs-hHY" kind="show" id="xgz-xI-VKx"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -232,4 +233,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xgz-xI-VKx"/>
+    </inferredMetricsTieBreakers>
 </document>
